@@ -1,4 +1,4 @@
-.logo-panel {
+/* .logo-panel {
     max-width: 100%;
     display: block;
     height: auto;
@@ -8,14 +8,34 @@
     max-width: 100%;
     display: block;
     height: auto;
-}
+} */
 
-section {
+/* section {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
     border: 1px solid black;
-    /* margin: 60px 60px; */
-    /* min-height: 600px; */
+
+} */
+
+/* Start of incorporating code snippets */
+body { background: url(/img/home_page.svg) no-repeat fixed center center;
+    background-size:cover;
+    }
+
+
+/* .bar {
+    height: 40px;
+    background: #678480;
+    margin-top:7%;
+    position:absolute;
+    width:100%;
+} */
+
+.line {
+    margin-top:7%;
+    border-top: 40px solid #678480;
+    padding-top: 50px;
+    padding-left: 500px;
 }
 
