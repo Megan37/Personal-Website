@@ -1,41 +1,137 @@
-/* .logo-panel {
-    max-width: 100%;
-    display: block;
-    height: auto;
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 40pt;
 }
 
-.name-panel {
-    max-width: 100%;
-    display: block;
-    height: auto;
-} */
+body, html {
+    margin:0;
+  }
+  main {
+    display:flex;
+  }
+  aside {
+    background-color:#eec0b4;
+    height:100vh;
+    width:1400px;
+    color:white;
+  }
 
-/* section {
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    border: 1px solid black;
+  aside > img {
+    margin: 110px;
+    margin-top: 600px;
+  }
 
-} */
+.pattern {
+    margin: 0;
+    margin-top: 595px;
+  }
 
-/* Start of incorporating code snippets */
-body { background: url(/img/home_page.svg) no-repeat fixed center center;
-    background-size:cover;
-    }
+  
+  section {
+    width: 100%;
+    /* margin:0 auto; */
+    background:url(../img/name_panel.jpg);
+    /* border:1px solid black; */
+  }
 
+  .green-bar {
+      top:150px;
+      position: absolute;
+      width:100%;
+      min-height:50px;
+      background-color: #669999;
+  }
 
-/* .bar {
-    height: 40px;
-    background: #678480;
-    margin-top:7%;
-    position:absolute;
-    width:100%;
-} */
-
-.line {
-    margin-top:7%;
-    border-top: 40px solid #678480;
-    padding-top: 50px;
-    padding-left: 500px;
+  ul > li {
+    display: inline;
+    margin: 10px;
+    color: #669999;
 }
 
+ul {
+  margin-left: 200px;
+  margin-top: 260px;
+}
+
+a {
+  color: #697c7c;
+}
+
+
+/* for the image grid */
+
+.portfolio-container > ul {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+  margin:0;
+  padding:0;
+}
+
+.portfolio-container > ul > li {
+  text-decoration:none;
+  list-style-type:none;
+}
+
+.portfolio-container > ul > li > img {
+  margin:10px;
+} 
+
+/* end of image grid */
+
+/* for the flip card */
+.card-container {
+  width: 1000px;
+  height: 1000px;
+  background: none;
+
+}
+
+.card {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  margin: 70px;
+}
+
+.card:hover {
+   transform: rotateY(180deg);
+}
+
+
+.front {
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #eec0b4;
+  color: #000;
+}
+
+.back {
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+/* end of flip card */
