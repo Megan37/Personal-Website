@@ -41,14 +41,12 @@ background-size: contain;
     /* margin-top: 595px; */
   }
 
-
-
-  
   section {
     width: 100%;
     /* margin:0 auto; */
     background:url(../img/sid_bg.gif);
     /* border:1px solid black; */
+    height:100vh;
   }
 
   .green-bar {
@@ -99,8 +97,11 @@ a {
 } 
 
 .portfolio-container {
-  margin-left: 50px;
-  margin-right: 50px;
+  /* margin-left: 50px;
+  margin-right: 50px; */
+  margin: 12.5%;
+  margin-top: 200px;
+  max-width: 75%;
 }
 
 /* end of image grid */
@@ -108,8 +109,8 @@ a {
 /* for the flip card */
 .card-container {
  
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: 500px;
   background: none;
 
 }
@@ -175,13 +176,24 @@ margin: 0 auto;
 .nav-portfolio > ul {
   /* margin-left: 400px;
   margin-top: 230px; */
-  margin: 0 auto;
+  margin: 70px auto;
+  text-align: center;
 }
 
 .portfolio {
   background: none;
 }
 
+.logo-circle > img {
+  width: 500px;
+}
+
+.logo-circle {
+  margin-top: 50px;
+  text-align: center;
+  z-index: 1000;
+  position: relative;
+}
 
 
 
